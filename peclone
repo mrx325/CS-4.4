@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# Start Cobalt Strike PE Parser
+#
+
+java -XX:ParallelGCThreads=4 -XX:+UseParallelGC -classpath ./cobaltstrike.jar -Duser.language=en pe.PEParser $*
